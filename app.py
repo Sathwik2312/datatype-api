@@ -6,8 +6,16 @@ import logging
 from resource.data_operations import DataTypeConversion
 
 app = Flask(__name__)
+
 CORS(app)
+
 api = Api(app)
+
+
+@app.route("/")
+def home():
+    return {"message": "API is running successfully"}
+
 
 logging.basicConfig(
     filename="app.log",
@@ -17,6 +25,7 @@ logging.basicConfig(
 )
 
 api.add_resource(DataTypeConversion, "/compare")
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
