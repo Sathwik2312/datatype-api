@@ -90,7 +90,10 @@ class DataTypeConversion(Resource):
 
             logging.info(f"Final DataTypes:\n{df.dtypes}")
 
-            return {"message": "Datatype conversion completed successfully"}
+            return {
+                "message": "Datatype conversion completed successfully",
+                "data_types": df.dtypes.astype(str).to_dict()
+            }
 
         except Exception as e:
             logging.error(f"Error occurred: {str(e)}")
