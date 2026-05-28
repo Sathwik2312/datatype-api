@@ -1,0 +1,31 @@
+2026-05-19 12:49:39,142 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-19 12:49:39,142 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-19 12:49:39,145 - INFO -  * Restarting with stat
+2026-05-19 12:49:40,226 - WARNING -  * Debugger is active!
+2026-05-19 12:49:40,232 - INFO -  * Debugger PIN: 791-778-605
+2026-05-19 12:49:51,314 - INFO - Datatype conversion API started
+2026-05-19 12:49:51,314 - INFO - Establishing database connection
+2026-05-19 12:49:51,403 - INFO - Reading data from data_auth table
+2026-05-19 12:49:51,787 - INFO - Total records fetched: 10
+2026-05-19 12:49:51,788 - INFO - Fetching schema information
+2026-05-19 12:49:51,825 - INFO - Original SQL schema fetched successfully
+2026-05-19 12:49:51,858 - INFO - String columns identified: ['dataauthid', 'dataauthjson', 'appid', 'userid_or_groupid', 'created_by', 'last_modified_by']
+2026-05-19 12:49:51,859 - INFO - Date columns identified: ['created_date', 'last_modified_date']
+2026-05-19 12:49:51,860 - INFO - Numeric columns identified: []
+2026-05-19 12:49:51,860 - INFO - Converting string columns
+2026-05-19 12:49:51,868 - INFO - Converting date columns
+2026-05-19 12:49:51,871 - INFO - Converting numeric columns
+2026-05-19 12:49:51,871 - INFO - Datatype conversion completed successfully
+2026-05-19 12:49:51,873 - INFO - Final DataTypes:
+dataauthid                    string
+dataauthjson                  string
+created_date          datetime64[us]
+last_modified_date    datetime64[us]
+appid                         string
+userid_or_groupid             string
+created_by                    string
+last_modified_by              string
+dtype: object
+2026-05-19 12:49:51,873 - INFO - Database connection closed
+2026-05-19 12:49:51,874 - INFO - 127.0.0.1 - - [19/May/2026 12:49:51] "POST /compare HTTP/1.1" 200 -
