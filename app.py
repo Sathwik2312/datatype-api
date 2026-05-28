@@ -3,7 +3,7 @@ from flask_restful import Api
 from flask_cors import CORS
 import logging
 
-from API_Projects.DataTypeConversion_Operations.resource.data_operations import DataTypeConversion
+from resource.data_operations import DataTypeConversion
 
 app = Flask(__name__)
 CORS(app)

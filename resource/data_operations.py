@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 from flask_restful import Resource
-from API_Projects.DataTypeConversion_Operations.common.config import db_connection
+from common.config import db_connection
 
 class DataTypeConversion(Resource):
     def post(self):
